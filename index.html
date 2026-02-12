@@ -48,7 +48,6 @@
                 return true;
             }
 
-            // แยก function สำหรับการคำนวณตามโจทย์ข้อ 9
             function convertTemp(t, u) {
                 var t1;
                 var u1;
@@ -73,10 +72,10 @@
                     return;
                }
                
-               // เรียกใช้ function คำนวณที่แยกออกมา
                var result = convertTemp(t, u);
                
-               alert("Temperature is " + result.val + " in " + result.unit);
+              
+               $("#result").html("Temperature is " + result.val + " in " + result.unit);
             });
         });
     </script>
